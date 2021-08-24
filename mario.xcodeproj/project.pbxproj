@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222211EB02B518380FF2B60E /* Pods_mario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B5487E0B14CAF499079B0C /* Pods_mario.framework */; };
 		BC5D4DED26D28DFF0095BE44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4DEC26D28DFF0095BE44 /* AppDelegate.swift */; };
 		BC5D4DEF26D28DFF0095BE44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4DEE26D28DFF0095BE44 /* SceneDelegate.swift */; };
 		BC5D4DF126D28DFF0095BE44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4DF026D28DFF0095BE44 /* ViewController.swift */; };
 		BC5D4DF426D28DFF0095BE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D4DF226D28DFF0095BE44 /* Main.storyboard */; };
 		BC5D4DF626D28E010095BE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5D4DF526D28E010095BE44 /* Assets.xcassets */; };
 		BC5D4DF926D28E010095BE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D4DF726D28E010095BE44 /* LaunchScreen.storyboard */; };
+		BC5D4E0126D3E1EA0095BE44 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */; };
+		BC5D4E0326D509D00095BE44 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0226D509D00095BE44 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B5487E0B14CAF499079B0C /* Pods_mario.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mario.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A71EF2B25180C9932732BE2 /* Pods-mario.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mario.debug.xcconfig"; path = "Target Support Files/Pods-mario/Pods-mario.debug.xcconfig"; sourceTree = "<group>"; };
+		975248FB1AEEDEBAA08D3C2A /* Pods-mario.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mario.release.xcconfig"; path = "Target Support Files/Pods-mario/Pods-mario.release.xcconfig"; sourceTree = "<group>"; };
 		BC5D4DE926D28DFF0095BE44 /* mario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5D4DEC26D28DFF0095BE44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5D4DEE26D28DFF0095BE44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		BC5D4DF526D28E010095BE44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5D4DF826D28E010095BE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5D4DFA26D28E010095BE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
+		BC5D4E0226D509D00095BE44 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222211EB02B518380FF2B60E /* Pods_mario.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73DFDF00467D950348AE64EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A71EF2B25180C9932732BE2 /* Pods-mario.debug.xcconfig */,
+				975248FB1AEEDEBAA08D3C2A /* Pods-mario.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B04D5A002C46F32622188597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15B5487E0B14CAF499079B0C /* Pods_mario.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC5D4DE026D28DFF0095BE44 = {
 			isa = PBXGroup;
 			children = (
 				BC5D4DEB26D28DFF0095BE44 /* mario */,
 				BC5D4DEA26D28DFF0095BE44 /* Products */,
+				73DFDF00467D950348AE64EF /* Pods */,
+				B04D5A002C46F32622188597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +87,8 @@
 				BC5D4DEC26D28DFF0095BE44 /* AppDelegate.swift */,
 				BC5D4DEE26D28DFF0095BE44 /* SceneDelegate.swift */,
 				BC5D4DF026D28DFF0095BE44 /* ViewController.swift */,
+				BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */,
+				BC5D4E0226D509D00095BE44 /* Network.swift */,
 				BC5D4DF226D28DFF0095BE44 /* Main.storyboard */,
 				BC5D4DF526D28E010095BE44 /* Assets.xcassets */,
 				BC5D4DF726D28E010095BE44 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC5D4DFD26D28E010095BE44 /* Build configuration list for PBXNativeTarget "mario" */;
 			buildPhases = (
+				6EBABE46CBBF03484539F6F7 /* [CP] Check Pods Manifest.lock */,
 				BC5D4DE526D28DFF0095BE44 /* Sources */,
 				BC5D4DE626D28DFF0095BE44 /* Frameworks */,
 				BC5D4DE726D28DFF0095BE44 /* Resources */,
+				14F71BC68E1D850B06AEF529 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +164,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14F71BC68E1D850B06AEF529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mario/Pods-mario-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mario/Pods-mario-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mario/Pods-mario-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBABE46CBBF03484539F6F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mario-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC5D4DE526D28DFF0095BE44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5D4E0326D509D00095BE44 /* Network.swift in Sources */,
 				BC5D4DF126D28DFF0095BE44 /* ViewController.swift in Sources */,
 				BC5D4DED26D28DFF0095BE44 /* AppDelegate.swift in Sources */,
+				BC5D4E0126D3E1EA0095BE44 /* GlobalVariable.swift in Sources */,
 				BC5D4DEF26D28DFF0095BE44 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +359,14 @@
 		};
 		BC5D4DFE26D28E010095BE44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A71EF2B25180C9932732BE2 /* Pods-mario.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P46ZX55J8;
 				INFOPLIST_FILE = mario/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +374,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lafuenter.mario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BC5D4DFF26D28E010095BE44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975248FB1AEEDEBAA08D3C2A /* Pods-mario.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P46ZX55J8;
 				INFOPLIST_FILE = mario/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lafuenter.mario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
