@@ -16,6 +16,8 @@
 		BC5D4DF926D28E010095BE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D4DF726D28E010095BE44 /* LaunchScreen.storyboard */; };
 		BC5D4E0126D3E1EA0095BE44 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */; };
 		BC5D4E0326D509D00095BE44 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0226D509D00095BE44 /* Network.swift */; };
+		BC5D4E0626D50F540095BE44 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0426D50F540095BE44 /* GameCell.swift */; };
+		BC5D4E0726D50F540095BE44 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5D4E0526D50F540095BE44 /* GameCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		BC5D4DFA26D28E010095BE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 		BC5D4E0226D509D00095BE44 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BC5D4E0426D50F540095BE44 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		BC5D4E0526D50F540095BE44 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +93,22 @@
 				BC5D4DF026D28DFF0095BE44 /* ViewController.swift */,
 				BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */,
 				BC5D4E0226D509D00095BE44 /* Network.swift */,
+				BC5D4E0826D50F640095BE44 /* GameCell */,
 				BC5D4DF226D28DFF0095BE44 /* Main.storyboard */,
 				BC5D4DF526D28E010095BE44 /* Assets.xcassets */,
 				BC5D4DF726D28E010095BE44 /* LaunchScreen.storyboard */,
 				BC5D4DFA26D28E010095BE44 /* Info.plist */,
 			);
 			path = mario;
+			sourceTree = "<group>";
+		};
+		BC5D4E0826D50F640095BE44 /* GameCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D4E0426D50F540095BE44 /* GameCell.swift */,
+				BC5D4E0526D50F540095BE44 /* GameCell.xib */,
+			);
+			path = GameCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,7 @@
 				BC5D4DF926D28E010095BE44 /* LaunchScreen.storyboard in Resources */,
 				BC5D4DF626D28E010095BE44 /* Assets.xcassets in Resources */,
 				BC5D4DF426D28DFF0095BE44 /* Main.storyboard in Resources */,
+				BC5D4E0726D50F540095BE44 /* GameCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +231,7 @@
 				BC5D4DED26D28DFF0095BE44 /* AppDelegate.swift in Sources */,
 				BC5D4E0126D3E1EA0095BE44 /* GlobalVariable.swift in Sources */,
 				BC5D4DEF26D28DFF0095BE44 /* SceneDelegate.swift in Sources */,
+				BC5D4E0626D50F540095BE44 /* GameCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,9 +18,9 @@ class Network: NSObject {
             print("Response: ", response.value)
             switch response.result {
             case .success(_):
-                successed(true, response.value)
+                successed(true, response.data)
             case .failure(_):
-                successed(false, response.value)
+                successed(false, response.data)
             }
         }
     }
