@@ -50,9 +50,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        tapGestureRecognizer.numberOfTapsRequired = 1
         let cell = gameTableView.dequeueReusableCell(withIdentifier: "GameCell", for: indexPath) as! GameCell
         let game = games[indexPath.row]
-        cell.update(game:game )
+        cell.update(game: game)
+        cell.gameImageView.tag = indexPath.row
+        cell.gameImageView.addGestureRecognizer(tapGestureRecognizer)
         return cell
     }
     
@@ -69,7 +73,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let viewController = segue.destination as! WebController
             let selectedRow = sender as? Int
             viewController.gameSeries = games[selectedRow!].gameSeries
+        } else if segue.identifier == "showImage" {
+            let viewController = segue.destination as! ImageController
+            let selectedRow = sender as? Int
+            viewController.image = games[selectedRow!].image
         }
+    }
+    
+    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "showImage", sender: sender.view!.tag)
     }
     
 }

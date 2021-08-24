@@ -28,9 +28,11 @@ class GameCell: UITableViewCell {
     func update(game: Game) {
         nameLabel.text = game.name
         gameSeries.text = game.gameSeries
+        gameSeries.textColor = .lightGray
         let url = URL(string: game.image)
         gameImageView.contentMode = .scaleToFill
         gameImageView.kf.setImage(with: url)
+        gameImageView.isUserInteractionEnabled = true
     }
     
 }

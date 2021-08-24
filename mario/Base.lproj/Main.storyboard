@@ -35,11 +35,42 @@
                     <connections>
                         <outlet property="gameTableView" destination="vl8-V4-vbk" id="cX9-JY-Ef0"/>
                         <segue destination="7H9-nh-PqP" kind="show" identifier="showWeb" id="eoO-eO-9nc"/>
+                        <segue destination="fAg-8H-TnT" kind="show" identifier="showImage" id="wq2-a2-Ub7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="35.491071428571423"/>
+        </scene>
+        <!--Image Controller-->
+        <scene sceneID="Gkm-UP-3KX">
+            <objects>
+                <viewController id="fAg-8H-TnT" customClass="ImageController" customModule="mario" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sD-dp-3tO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-6q-keX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dSz-nU-PsB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dSz-nU-PsB" firstAttribute="bottom" secondItem="qtS-6q-keX" secondAttribute="bottom" id="DXv-FQ-GVs"/>
+                            <constraint firstItem="qtS-6q-keX" firstAttribute="top" secondItem="dSz-nU-PsB" secondAttribute="top" id="Khr-Nw-e0o"/>
+                            <constraint firstItem="qtS-6q-keX" firstAttribute="leading" secondItem="dSz-nU-PsB" secondAttribute="leading" id="RLk-Wc-KsE"/>
+                            <constraint firstItem="dSz-nU-PsB" firstAttribute="trailing" secondItem="qtS-6q-keX" secondAttribute="trailing" id="Txi-Hu-c8P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tv5-RE-u0H"/>
+                    <connections>
+                        <outlet property="imageView" destination="qtS-6q-keX" id="EPU-dg-mga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Euo-jx-8U0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="744"/>
         </scene>
         <!--Web Controller-->
         <scene sceneID="fbA-Qs-sDD">

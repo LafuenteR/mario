@@ -19,6 +19,7 @@
 		BC5D4E0626D50F540095BE44 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0426D50F540095BE44 /* GameCell.swift */; };
 		BC5D4E0726D50F540095BE44 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5D4E0526D50F540095BE44 /* GameCell.xib */; };
 		BC5D4E0A26D534520095BE44 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0926D534520095BE44 /* WebController.swift */; };
+		BC5D4E0C26D53E430095BE44 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D4E0B26D53E430095BE44 /* ImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		BC5D4E0426D50F540095BE44 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		BC5D4E0526D50F540095BE44 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 		BC5D4E0926D534520095BE44 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		BC5D4E0B26D53E430095BE44 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				BC5D4DF026D28DFF0095BE44 /* ViewController.swift */,
 				BC5D4E0926D534520095BE44 /* WebController.swift */,
 				BC5D4E0026D3E1E90095BE44 /* GlobalVariable.swift */,
+				BC5D4E0B26D53E430095BE44 /* ImageController.swift */,
 				BC5D4E0226D509D00095BE44 /* Network.swift */,
 				BC5D4E0826D50F640095BE44 /* GameCell */,
 				BC5D4DF226D28DFF0095BE44 /* Main.storyboard */,
@@ -236,6 +239,7 @@
 				BC5D4E0126D3E1EA0095BE44 /* GlobalVariable.swift in Sources */,
 				BC5D4DEF26D28DFF0095BE44 /* SceneDelegate.swift in Sources */,
 				BC5D4E0626D50F540095BE44 /* GameCell.swift in Sources */,
+				BC5D4E0C26D53E430095BE44 /* ImageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

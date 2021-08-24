@@ -11,6 +11,7 @@ struct GlobalVariable {
     static var apiUrl = "https://www.amiiboapi.com/api/amiibo/"
     static var googleUrl = "https://www.google.com/search?q="
     static var webControllerTitle = "Series Description"
+    static var fullImage = "Full Image"
 }
 
 struct GameList: Codable {
